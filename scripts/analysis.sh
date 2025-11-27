@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# === Đường dẫn project ===
+
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 RAW_FILE="$BASE_DIR/data/tmdb-movie.csv"
@@ -9,26 +9,20 @@ OUT_DIR="$BASE_DIR/output"
 
 echo "=== START ==="
 
-# === 1. Clean: chỉ remove dòng thiếu release_date ===
 clean_data(){
     echo "==========================================================================================="
-    echo "[1] Cleaning data → remove empty release_date (column 16)"
-
-    # CHỈ bỏ dòng release_date null → giữ nguyên toàn bộ các dòng còn lại
+    echo "[1] Cleaning data → remove empty release_date"
     csvgrep -c 16 -r "." "$RAW_FILE" > "$CLEAN_FILE"
 
     echo "Cleaned file saved to:"
     echo "  $CLEAN_FILE"
 }
 
-# === 2. Sort theo release_date giảm dần ===
 sort_by_release_date(){
     echo "==========================================================================================="
     echo "Sắp xếp các bộ phim theo ngày phát hành giảm dần rồi lưu ra một file mới"
 
     mkdir -p "$OUT_DIR"
-
-    # csvsort hiểu header nên không lệch cột
     csvsort -c release_date -r "$CLEAN_FILE" \
         > "$OUT_DIR/movies_sorted_by_date.csv"
 
