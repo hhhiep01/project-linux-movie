@@ -1,9 +1,10 @@
-##  1. Phim có doanh thu cao nhất
+
+## 1. Phim có doanh thu cao nhất
 **Avatar — James Cameron — 2009-12-10 — 2,781,505,847.0**
 
 ---
 
-##  2. Phim có doanh thu thấp nhất
+## 2. Phim có doanh thu thấp nhất
 **Wild Card — Simon West — 2015-01-14 — 0.0**
 
 ---
@@ -13,7 +14,7 @@
 
 ---
 
-## 4. Top 10 bộ phim đem về lợi nhuận cao nhất
+##  4. Top 10 bộ phim đem về lợi nhuận cao nhất
 > Lợi nhuận = Revenue - Budget
 
 | Rank | Movie | Director | Release Date | Profit |
@@ -31,17 +32,17 @@
 
 ---
 
-## 5. Đạo diễn có nhiều phim nhất
+## 🎥 5. Đạo diễn có nhiều phim nhất
 **Woody Allen — 45 phim**
 
 ---
 
-## 6. Diễn viên đóng nhiều phim nhất
+##  6. Diễn viên đóng nhiều phim nhất
 **Robert De Niro — 72 phim**
 
 ---
 
-## 7. Số lượng phim theo từng thể loại
+##  7. Số lượng phim theo từng thể loại
 
 | Thể loại | Số lượng |
 |--------|---------|
@@ -67,4 +68,3 @@
 | Western | 165 |
 
 ---
-
